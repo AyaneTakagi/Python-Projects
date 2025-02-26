@@ -3,8 +3,11 @@ from twilio.rest import Client
 import os
 from dotenv import load_dotenv
 
-
 load_dotenv()
+
+# 📌 プログラム概要 / Program Overview:
+# このプログラムは天気予報を取得し、雨が降る場合はTwilioを使ってWhatsAppに送信する。
+# This program fetches the weather forecast and sends a WhatsApp notification using Twilio if it will rain.
 
 # 📌 参照しているAPI / APIs Used:
 # - OpenWeatherMap API: https://openweathermap.org/forecast5
@@ -15,8 +18,9 @@ OpenWeatherMap_Endpoint = "https://api.openweathermap.org/data/2.5/forecast"
 OpenWeatherMap_api_key = os.getenv("OPEN_WEATHER_MAP_API_KEY")
 
 # Twilio APIの認証情報 / Twilio API authentication
-Twilio_account_sid = os.getenv("TWILIO_ACCOUNT_SID")
-Twilio_auth_token = os.getenv("TWILIO_AUTH_TOKEN")
+TWILIO_ACCOUNT_SID = os.getenv("TWILIO_ACCOUNT_SID")
+TWILIO_AUTH_TOKEN = os.getenv("TWILIO_AUTH_TOKEN")
+TWILIO_WHATSAPP_TO = os.getenv("TWILIO_WHATSAPP_TO")
 
 weather_params = {
     "lat": 47.533340,
@@ -37,19 +41,14 @@ for hour_data in weather_data["list"]:
         will_rain = True
 
 # Twilioを使ってWhatsAppメッセージを送信 / Send WhatsApp message using Twilio
+client = Client(TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN)
 if will_rain:
-    client = Client(Twilio_account_sid, Twilio_auth_token)
-    message = client.messages.create(
-        from_='whatsapp:+14155238886',
-        body="It's going to rain today. Remember to bring an ☔️",
-        to='whatsapp:+818028701123'
-    )
-    print(message.sid)
+    message_body = "It's going to rain today. Remember to bring an ☔️"
 else:
-    client = Client(Twilio_account_sid, Twilio_auth_token)
-    message = client.messages.create(
+    message_body = "It's a nice sunny day ☀️"
+message = client.messages.create(
         from_='whatsapp:+14155238886',
-        body="It's a nice sunny day ☀️",
-        to='whatsapp:+818028701123'
+        body=message_body,
+        to=TWILIO_WHATSAPP_TO,
     )
-    print(message.sid)
+print(message.sid)
