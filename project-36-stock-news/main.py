@@ -3,8 +3,6 @@ from twilio.rest import Client
 import os
 from dotenv import load_dotenv
 
-load_dotenv()
-
 # 📌 プログラム概要 / Program Overview:
 # このプログラムは、Tesla (TSLA) の株価変動を監視し、変動率が3%以上の場合に関連ニュースを取得。
 # そのニュースをTwilioを使ってWhatsAppに送信する。
@@ -15,6 +13,14 @@ load_dotenv()
 # - Alpha Vantage API (株価データ取得 / Fetching stock data): https://www.alphavantage.co/documentation/
 # - NewsAPI (ニュース取得 / Fetching news articles): https://newsapi.org/docs/endpoints/everything
 # - Twilio API (WhatsApp メッセージ送信 / Sending WhatsApp messages): https://console.twilio.com/us1/develop/sms/try-it-out/whatsapp-learn
+
+load_dotenv()
+# .env ファイルの例 / Example .env file:
+# STOCK_API_KEY=your_stock_api_key
+# NEWS_API_KEY=your_news_api_key
+# TWILIO_ACCOUNT_SID=your_twilio_account_sid
+# TWILIO_AUTH_TOKEN=your_twilio_auth_token
+# TWILIO_WHATSAPP_TO=whatsapp:+your_whatsapp_number
 
 STOCK_NAME = "TSLA"
 COMPANY_NAME = "Tesla Inc"
@@ -73,7 +79,7 @@ if abs(percentage_difference) > 3:
     client = Client(TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN)
     for article in formatted_articles:
         message = client.messages.create(
-            from_='whatsapp:+14155238886',
+            from_='whatsapp:+14155238886', # Twilioの公式WhatsApp送信番号 / Twilio's WhatsApp number
             body=article,
             to=TWILIO_WHATSAPP_TO,
         )

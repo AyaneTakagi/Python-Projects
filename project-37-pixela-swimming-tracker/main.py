@@ -3,14 +3,16 @@ from datetime import datetime
 import os
 from dotenv import load_dotenv
 
-load_dotenv()
-
 # 📌 プログラム概要 / Program Overview:
 # Pixe.la API を使用して水泳の記録を管理。
 # This script uses the Pixe.la API to track swimming records.
-#
+
 # 📌 参照しているAPI / APIs Used:
 # - Pixe.la API (アクティビティ記録 / Activity tracking): https://pixe.la/ja
+
+load_dotenv()
+# .env ファイルの例 / Example .env file:
+# TOKEN=your_token
 
 USERNAME = "ayane1123"
 TOKEN = os.getenv("TOKEN")

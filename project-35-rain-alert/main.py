@@ -3,8 +3,6 @@ from twilio.rest import Client
 import os
 from dotenv import load_dotenv
 
-load_dotenv()
-
 # 📌 プログラム概要 / Program Overview:
 # このプログラムは天気予報を取得し、雨が降る場合はTwilioを使ってWhatsAppに送信する。
 # This program fetches the weather forecast and sends a WhatsApp notification using Twilio if it will rain.
@@ -12,6 +10,13 @@ load_dotenv()
 # 📌 参照しているAPI / APIs Used:
 # - OpenWeatherMap API: https://openweathermap.org/forecast5
 # - Twilio API (WhatsApp メッセージ送信 / Sending WhatsApp messages): https://console.twilio.com/us1/develop/sms/try-it-out/whatsapp-learn
+
+load_dotenv()
+# 📌 .env ファイルの例 / Example .env file:
+# OPEN_WEATHER_MAP_API_KEY=your_open_weather_map_api_key
+# TWILIO_ACCOUNT_SID=your_twilio_account_sid
+# TWILIO_AUTH_TOKEN=your_twilio_auth_token
+# TWILIO_WHATSAPP_TO=whatsapp:+your_whatsapp_number
 
 # OpenWeatherMap APIのエンドポイントとキー / OpenWeatherMap API endpoint and key
 OpenWeatherMap_Endpoint = "https://api.openweathermap.org/data/2.5/forecast"
@@ -47,8 +52,8 @@ if will_rain:
 else:
     message_body = "It's a nice sunny day ☀️"
 message = client.messages.create(
-        from_='whatsapp:+14155238886',
-        body=message_body,
-        to=TWILIO_WHATSAPP_TO,
-    )
+    from_='whatsapp:+14155238886', # Twilioの公式WhatsApp送信番号 / Twilio's WhatsApp number
+    body=message_body,
+    to=TWILIO_WHATSAPP_TO,
+)
 print(message.sid)
