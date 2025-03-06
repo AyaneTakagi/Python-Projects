@@ -23,7 +23,7 @@ This program fetches the top songs from the Billboard Hot 100 for a given date a
 📌 参照しているAPI / APIs Used:
 - Billboard API: https://www.billboard.com/charts/hot-100/
 - Spotify API: https://developer.spotify.com/documentation/web-api/
- 
+
 📌 環境変数 (.env) / Environment Variables:
 - SPOTIFY_CLIENT_ID=your_spotify_client_id
 - SPOTIFY_CLIENT_SECRET=your_spotify_client_secret
@@ -51,14 +51,14 @@ SPOTIFY_CLIENT_SECRET = os.getenv("SPOTIFY_CLIENT_SECRET")
 SPOTIFY_DISPLAY_NAME = os.getenv("SPOTIFY_DISPLAY_NAME")
 
 sp = spotipy.Spotify(
-    auth_manager = SpotifyOAuth(
-        client_id = SPOTIFY_CLIENT_ID,
-        client_secret = SPOTIFY_CLIENT_SECRET,
-        redirect_uri = "http://example.com",
-        scope = "playlist-modify-private",
-        show_dialog = True,
-        cache_path = "token.txt",
-        username = SPOTIFY_DISPLAY_NAME,
+    auth_manager=SpotifyOAuth(
+        client_id=SPOTIFY_CLIENT_ID,
+        client_secret=SPOTIFY_CLIENT_SECRET,
+        redirect_uri="http://example.com",
+        scope="playlist-modify-private",
+        show_dialog=True,
+        cache_path="token.txt",
+        username=SPOTIFY_DISPLAY_NAME,
     )
 )
 
