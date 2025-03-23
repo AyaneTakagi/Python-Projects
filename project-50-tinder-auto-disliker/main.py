@@ -10,9 +10,9 @@ from dotenv import load_dotenv
 Tinder Auto Disliker - Tinder自動「イマイチ」プログラム
 
 📌 プログラム概要 / Program Overview:
-このプログラムはSeleniumを使用してTinderのログインとスワイプを自動化します。
+このプログラムはSeleniumを使用してTinderのログインとスワイプを自動化。
 Facebookでのログイン、位置情報と通知の許可、GDPR同意画面の処理を行い、
-無料枠（100回/日）の「Dislike（イマイチ）」を自動で実行します。
+無料枠（100回/日）の「Dislike（イマイチ）」を自動で実行。
 
 This program automates the login and swiping process on Tinder using Selenium.
 It handles login via Facebook, allows location and notifications, processes
