@@ -1,8 +1,10 @@
 Flaskでお問い合わせフォームを実装 / Project 60 - Contact Form Integration with Flask
 
 📌 プログラム概要 / Program Overview
+
 このプロジェクトは、前回のブログウェブサイトのアップグレード版です。
 今回のメインのゴールは、お問い合わせフォームをFlaskで動作させることでした。
+
 This project is an upgraded version of a previous blog website.
 The main focus of this project was to make the Contact Form functional using Flask.
 
@@ -14,6 +16,7 @@ The main focus of this project was to make the Contact Form functional using Fla
 5. WhatsAppに送られてきたデータを送信機能 / Sending the submitted data via WhatsApp
 
 📌 学んだこと / What I Learned
+
 Bootstrapを使ったフォーム作成とスタイリング方法 / How to create and style forms with Bootstrap
 HTMLフォームのactionとmethod属性の役割 / How HTML form action and method attributes work
 FlaskでPOSTリクエストを処理する方法 / How to handle POST requests in Flask
