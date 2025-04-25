@@ -20,23 +20,23 @@ It includes features such as:
 
 ## 📌 Features / 機能
 
-### ✅ Display Cafe Information / カフェ情報を表示
+### Display Cafe Information / カフェ情報を表示
 - Display cafe information from a CSV file in a **Bootstrap table**  
   CSVファイルからカフェ情報を **Bootstrapテーブル** で表示
 
-### ✅ Add New Cafe / 新しいカフェを追加
+### Add New Cafe / 新しいカフェを追加
 - Add new cafes using a form with **proper field validation**  
   **適切なフィールドバリデーション**を備えたフォームで新しいカフェを追加
 
-### ✅ Display Maps Link / マップリンクを表示
+### Display Maps Link / マップリンクを表示
 - Display a link to the cafe's location as an anchor tag with the text "Maps Link"  
   カフェの場所へのリンクを **「Maps Link」** のテキストでアンカータグとして表示
 
-### ✅ Navigation / ページ間ナビゲーション
+### Navigation / ページ間ナビゲーション
 - Navigate between pages such as the home page and cafe page  
   ホームページとカフェページなど、ページ間を移動
 
-### ✅ Form Handling & Validation / フォーム処理とバリデーション
+### Form Handling & Validation / フォーム処理とバリデーション
 - Use **Flask-WTF** for **form handling** and **validation**  
   **Flask-WTF** を使用してフォームの処理とバリデーションを行う
 
@@ -44,13 +44,9 @@ It includes features such as:
 
 ## 📌 Technologies / 使用技術
 
-- **Flask** - A lightweight web framework for Python  
-  **Flask** - Python用の軽量ウェブフレームワーク
-- **WTForms** - A form handling library for Flask  
-  **WTForms** - Flask用のフォーム処理ライブラリ
-- **Bootstrap-Flask** - A Flask extension for Bootstrap integration  
-  **Bootstrap-Flask** - Bootstrap統合のためのFlask拡張機能
-- **CSV** - Used for storing and reading cafe data  
-  **CSV** - カフェデータの保存と読み取りに使用
+- **Flask** - A lightweight web framework for Python / Python用の軽量ウェブフレームワーク
+- **WTForms** - A form handling library for Flask / Flask用のフォーム処理ライブラリ
+- **Bootstrap-Flask** - A Flask extension for Bootstrap integration / Bootstrap統合のためのFlask拡張機能
+- **CSV** - Used for storing and reading cafe data / カフェデータの保存と読み取りに使用
 
 ---
