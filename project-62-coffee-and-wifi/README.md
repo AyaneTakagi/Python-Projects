@@ -32,6 +32,7 @@ It includes features such as:
 - カフェの場所へのリンクを **「Maps Link」** のテキストでアンカータグとして表示
 - ホームページとカフェページなど、ページ間を移動
 - **Flask-WTF** を使用してフォームの処理とバリデーションを行う
+
 ---
 
 ## 📌 Technologies / 使用技術
@@ -40,6 +41,8 @@ It includes features such as:
 - **WTForms** - A form handling library for Flask / Flask用のフォーム処理ライブラリ
 - **Bootstrap-Flask** - A Flask extension for Bootstrap integration / Bootstrap統合のためのFlask拡張機能
 - **CSV** - Used for storing and reading cafe data / カフェデータの保存と読み取りに使用
+
+---
 
 ## 📸 Demo / 動作デモ
 
