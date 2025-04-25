@@ -19,6 +19,7 @@ Flask と Flask-WTF を使って作成したシンプルなログインアプリ
 - Use CSRF protection
 - Create routes that return different pages based on form input
 
+
 - Flask-WTFとWTFormsを使ったフォームの構築
 - メール形式やパスワードの長さなどのバリデーション追加
 - CSRF対策の実装（悪意ある第三者による不正なリクエストを防ぐため）
