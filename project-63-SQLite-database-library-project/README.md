@@ -31,8 +31,17 @@ FlaskとSQLAlchemyを使って作成したシンプルな図書管理システ�
 ## 📌 Technologies / 使用技術
 
 - Python 3
-- Flask: Lightweight web framework used for the app's backend.
-- SQLAlchemy: ORM used for interacting with the database.
-- Jinja2: Templating engine for HTML rendering.
-- WTForms: Used for validating form inputs.
-- Bootstrap: For frontend styling (optional).
+- Flask
+- SQLAlchemy
+- Jinja2
+- WTForms
+- Bootstrap
+
+---
+
+## 📸 Demo / 動作デモ
+
+Home page
+
+![Home Page](./static/assets/library-home.gif)
+
