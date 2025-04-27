@@ -1,6 +1,6 @@
 # Movie Ranking Website
 
-## 📌 Overview / 概要
+## 📌 Overview
 
 This project is a movie ranking website built using Flask, WTForms, SQLite, and SQLAlchemy. 
 The website allows users to create, edit, and delete entries for their favorite movies. 
@@ -15,7 +15,7 @@ and add new movies using an API to fetch movie data.
 
 ---
 
-## 📌 Features / 機能
+## 📌 Features
 
 View Movie List Items / 映画リストの表示
 
@@ -27,14 +27,14 @@ View Movie List Items / 映画リストの表示
 - Review
 - Image URL
 
-Edit Movie Rating and Review / 映画の評価とレビューの編集Delete Movies from the Database  
-Delete Movies from the Database / データベースから映画を削除Sort and Rank Movies by Rating  
+Edit Movie Rating and Review / 映画の評価とレビューの編集 
+Delete Movies from the Database / データベースから映画を削除
 Add New Movies via the Add Page / 映画の追加ページ  
 Sort and Rank Movies by Rating / 評価による映画の並べ替えとランキング  
 
 ---
 
-## 📌 Technologies / 使用技術
+## 📌 Technologies
 
 - Python 3.x
 - Flask
@@ -83,3 +83,15 @@ To use the TMDb API, you'll need to sign up for a free account and obtain an API
 
 TMDb APIを使用するには、[TMDb](https://www.themoviedb.org/)で無料アカウントを作成し、APIキーを取得する必要があります。
 
+---
+
+## 📸 Demo
+
+Home page  
+![Home Page](./static/assets/home.gif)
+
+Update and delete page  
+![Update Page](./static/assets/update-and-delete.gif)
+
+Add page  
+![Delete Page](./static/assets/add.gif)
