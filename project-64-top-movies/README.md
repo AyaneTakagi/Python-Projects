@@ -27,8 +27,8 @@ View Movie List Items / 映画リストの表示
 - Review
 - Image URL
 
-Edit Movie Rating and Review / 映画の評価とレビューの編集 
-Delete Movies from the Database / データベースから映画を削除
+Edit Movie Rating and Review / 映画の評価とレビューの編集  
+Delete Movies from the Database / データベースから映画を削除  
 Add New Movies via the Add Page / 映画の追加ページ  
 Sort and Rank Movies by Rating / 評価による映画の並べ替えとランキング  
 
