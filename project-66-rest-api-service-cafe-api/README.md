@@ -103,51 +103,33 @@ Response:
 
 ### Get Random Cafe
 
-Send a GET request to http://localhost:5000/random.  
-This will return a random cafe from the database.  
-
-http://localhost:5000/random にGETリクエストを送信します。  
-これにより、データベースからランダムなカフェが返されます。  
+Send a GET request to `http://localhost:5000/random`.  
+This will return a random cafe from the database.
 
 ### Get All Cafes
 
-Send a GET request to http://localhost:5000/all.  
-This will return a list of all cafes in the database.  
-
-http://localhost:5000/all にGETリクエストを送信します。  
-これにより、データベース内のすべてのカフェがリストとして返されます。  
+Send a GET request to `http://localhost:5000/all`.  
+This will return a list of all cafes in the database.   
 
 ### Search Cafes by Location
 
-Send a GET request to http://localhost:5000/search?loc=Tokyo.  
-This will search for cafes in the specified location (Tokyo in this case).  
-
-http://localhost:5000/search?loc=Tokyo にGETリクエストを送信します。  
-これにより、指定した場所（ここでは「Tokyo」）のカフェを検索できます。  
+Send a GET request to `http://localhost:5000/search?loc=Tokyo`.  
+This will search for cafes in the specified location (Tokyo in this case).   
 
 ### Add a New Cafe (HTTP POST)
 
-Send a POST request with cafe details (e.g., name, location, price) to http://localhost:5000/add.  
-This will add a new cafe to the database.  
-
-カフェの詳細（名前、場所、価格など）を含むPOSTリクエストを http://localhost:5000/add に送信します。  
-これにより、新しいカフェがデータベースに追加されます。  
+Send a POST request with cafe details (e.g., name, location, price) to `http://localhost:5000/add`.  
+This will add a new cafe to the database.
 
 ### Update a Cafe's Coffee Price (HTTP PATCH)
 
-Send a PATCH request to http://localhost:5000/update-price/<cafe_id> with the new coffee price.  
-This will update the coffee price for the specified cafe.  
-
-新しいコーヒー価格を指定して、http://localhost:5000/update-price/<cafe_id> にPATCHリクエストを送信します。  
-これにより、指定したカフェのコーヒー価格が更新されます。  
+Send a PATCH request to `http://localhost:5000/update-price/<cafe_id>` with the new coffee price.  
+This will update the coffee price for the specified cafe.
 
 ### Delete a Cafe (HTTP DELETE)
 
-Send a DELETE request to http://localhost:5000/report-closed/<cafe_id> with an API key.  
-This will mark the specified cafe as closed and remove it from the database.  
-
-APIキーを使用して、http://localhost:5000/report-closed/<cafe_id>にDELETEリクエストを送信します。  
-これにより、指定したカフェが閉店したものとしてマークされ、データベースから削除されます。
+Send a DELETE request to `http://localhost:5000/report-closed/<cafe_id>` with an API key.  
+This will mark the specified cafe as closed and remove it from the database.
 
 ## 📌 Documentation
 
